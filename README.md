@@ -21,10 +21,16 @@ The Parameter Scanner add-in for Revit is designed to enhance the model review p
     git clone https://github.com/viniciusmtsantos/cs-parameter_scanner.git
     ```
 2. **Open in Visual Studio**: Open the project solution file (`ParameterScanner.sln`) in Visual Studio 2019 or 2022.
-3. **Build the Solution**: Build the solution to compile the add-in. Ensure the build configuration is set to "Release".
-5. **.ico File**: Place  (`<>\Resources\scanner_icon.ico`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
-6. **.dll File**: Place (`<>\bin\Debug\ParameterScanner.dll`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
-4. **Add-in Manifest File**: Place add-in manifest file  (`ParameterScanner.addin`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
+
+3. **Place files**: If you want to run a debug, I have created a post-build event that automatically copies the necessary files to the Revit Add-ins folder. The post-build event is as follows. However, if you prefer to place the files manually.
+
+    ```xml
+    <PostBuildEvent>
+        if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\20xx"
+        if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\20xx"
+        if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)$(OutputPath)Resources\*.ico" "$(AppData)\Autodesk\REVIT\Addins\20xx"
+    </PostBuildEvent>
+    ```
 
 ### Usage
 
