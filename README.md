@@ -28,9 +28,11 @@ The Parameter Scanner add-in for Revit is designed to enhance the model review p
     <PostBuildEvent>
         if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\20xx"
         if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\20xx"
-        if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)$(OutputPath)Resources\*.ico" "$(AppData)\Autodesk\REVIT\Addins\20xx"
+        if exist "$(AppData)\Autodesk\REVIT\Addins\20xx" copy "$(ProjectDir)$Resources\*.ico" "$(AppData)\Autodesk\REVIT\Addins\20xx"
     </PostBuildEvent>
     ```
+    
+4. **Set Start Action**: Start Revit (`%programfiles%\Autodesk\Revit 20xx\Revit.exe`)
 
 ### Usage
 
