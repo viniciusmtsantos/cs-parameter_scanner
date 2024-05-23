@@ -52,16 +52,6 @@ The Parameter Scanner add-in for Revit 2020 is designed to enhance the model rev
 4. **Specify Search Parameters**: Enter the parameter name and value to search for. Leave the value field blank to search for elements with empty parameter values.
 5. **Perform Actions**: Use the buttons in the form to isolate or select the identified elements.
 
-## Contributing
-
-We welcome contributions to the Parameter Scanner project. Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
