@@ -29,20 +29,7 @@ The Parameter Scanner add-in for Revit 2020 is designed to enhance the model rev
 2. **Open in Visual Studio**: Open the project solution file (`ParameterScanner.sln`) in Visual Studio 2019 or 2022.
 3. **Restore NuGet Packages**: Restore the required NuGet packages by right-clicking on the solution in the Solution Explorer and selecting "Restore NuGet Packages".
 4. **Build the Solution**: Build the solution to compile the add-in. Ensure the build configuration is set to "Release".
-5. **Add-in Manifest File**: Create an add-in manifest file (`ParameterScanner.addin`) and place it in the Revit Add-ins folder (`C:\ProgramData\Autodesk\Revit\Addins\2020`). Here is an example of what the manifest file might look like:
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <RevitAddIns>
-        <AddIn Type="Application">
-            <Name>Parameter Scanner</Name>
-            <Assembly>C:\Path\To\Your\Addin\ParameterScanner.dll</Assembly>
-            <AddInId>GUID-GOES-HERE</AddInId>
-            <VendorId>YourCompany</VendorId>
-            <VendorDescription>Your Company Description</VendorDescription>
-        </AddIn>
-    </RevitAddIns>
-    ```
+5. **Add-in Manifest File**: Create an add-in manifest file (`ParameterScanner.addin`) and place it in the Revit Add-ins folder (`C:\ProgramData\Autodesk\Revit\Addins\20xx`)
 
 ### Usage
 
