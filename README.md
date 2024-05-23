@@ -22,7 +22,9 @@ The Parameter Scanner add-in for Revit is designed to enhance the model review p
     ```
 2. **Open in Visual Studio**: Open the project solution file (`ParameterScanner.sln`) in Visual Studio 2019 or 2022.
 
-3. **Place files**: If you want to run a debug, I have created a post-build event that automatically copies the necessary files to the Revit Add-ins folder. The post-build event is as follows. However, you can to place the files manually, if you prefer.
+3. **Place files**: To run the addin correctly, you need to provide the compiled .NET assembly DLL and the add-in manifest. These files have the extensions .DLL and .ADDIN, respectively. They must be placed in the appropriate Revit add-in folder.
+
+If you want to run a debug, I have set up a post-build event that automatically copies the necessary files to the Revit Add-ins folder. The post-build event is as follows. However, you can also place the files manually if you prefer.
 
     ```xml
     <PostBuildEvent>
