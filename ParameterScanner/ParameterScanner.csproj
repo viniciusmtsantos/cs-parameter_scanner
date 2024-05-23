@@ -81,6 +81,6 @@
   <PropertyGroup>
     <PostBuildEvent>if exist "$(AppData)\Autodesk\REVIT\Addins\2022" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2022"
 if exist "$(AppData)\Autodesk\REVIT\Addins\2022" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\2022"
-if exist "$(AppData)\Autodesk\REVIT\Addins\2022" copy "$(ProjectDir)$(OutputPath)Resources\*.ico" "$(AppData)\Autodesk\REVIT\Addins\2022"</PostBuildEvent>
+if exist "$(AppData)\Autodesk\REVIT\Addins\2022" copy "$(ProjectDir)Resources\*.ico" "$(AppData)\Autodesk\REVIT\Addins\2022"</PostBuildEvent>
   </PropertyGroup>
 </Project>
