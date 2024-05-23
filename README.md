@@ -1,6 +1,5 @@
 ![alt text](ParameterScanner/Resources/scanner_icon.ico)
 # Parameter Scanner Add-in for Revit
----
 
 ## Project Description
 
