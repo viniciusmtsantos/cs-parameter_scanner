@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>ParameterScanner</Name>
+		<Assembly>ParameterScanner.dll</Assembly>
+		<AddInId>1E102CE5-5F18-40CD-A991-2F581526686D</AddInId>
+		<FullClassName>ParameterScanner.App</FullClassName>
+		<Text>Parameter Scanner</Text>
+		<Description>Set the values to scan parameters</Description>
+		<VendorId>Vinicius S.</VendorId>
+		<VendorDescription>Vinicius Santos, www.github.com/viniciusmtsantos</VendorDescription>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+	</AddIn>
+</RevitAddIns>

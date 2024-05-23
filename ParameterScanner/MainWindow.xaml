@@ -1,0 +1,53 @@
+﻿<Window x:Class="ParameterScanner.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ParameterScanner"
+             mc:Ignorable="d" Height="auto" Width="305" ResizeMode="NoResize" SizeToContent="Height" Title="Parameter Scanner" Background="White" Foreground="Black" WindowStyle="ThreeDBorderWindow">
+    <Border Padding="15">
+        <StackPanel>
+            <Image Height="50" Width="44" Margin="5" Source="/ParameterScanner;component/Resources/scanner_icon.ico"/>
+            <Separator/>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Parameter Name:" Grid.Column="0" />
+                    <TextBox x:Name="parameter_Name" Grid.Column="2" Width="140" Height="20"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="17"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Parameter Value:" Grid.Column="0" />
+                    <TextBox x:Name="parameter_Value" Grid.Column="2" Width="140" Height="20" />
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10 20 10 10" Width="220">
+                <Grid Height="25">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button  IsEnabled="{Binding ElementName=parameter_Name,Path=Text.Length}" Content="Isolate in View" Width="90" Grid.Column="0" Cursor="Hand" Click="IsolateElementsInView"/>
+                    <Button IsEnabled="{Binding ElementName=parameter_Name,Path=Text.Length}" Content="Select" Width="90" Grid.Column="2" Cursor="Hand" Click="SelectElementsInView"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
