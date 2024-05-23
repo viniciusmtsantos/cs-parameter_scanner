@@ -3,7 +3,7 @@
 
 ## Project Description
 
-The Parameter Scanner add-in for Revit is designed to enhance the model review process by allowing users to scan model elements for specific parameter values. This tool provides the functionality to isolate or select elements based on their parameter status and the user who last modified them.
+The Parameter Scanner add-in for Revit is designed to enhance the model review process by allowing users to scan model elements for specific parameter values. This tool provides the functionality to isolate or select elements based on their parameters.
 
 ## Features
 
