@@ -22,7 +22,9 @@ The Parameter Scanner add-in for Revit is designed to enhance the model review p
     ```
 2. **Open in Visual Studio**: Open the project solution file (`ParameterScanner.sln`) in Visual Studio 2019 or 2022.
 3. **Build the Solution**: Build the solution to compile the add-in. Ensure the build configuration is set to "Release".
-4. **Add-in Manifest File**: Create an add-in manifest file (`ParameterScanner.addin`) and place it in the Revit Add-ins folder (`%ProgramData%\Autodesk\Revit\Addins\20xx`)
+5. **.ico File**: Place  (`<>\Resources\scanner_icon.ico`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
+6. **.dll File**: Place (`<>\bin\Debug\ParameterScanner.dll`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
+4. **Add-in Manifest File**: Place add-in manifest file  (`ParameterScanner.addin`) in the Revit Add-ins folder (`%AppData%\Autodesk\Revit\Addins\20xx`)
 
 ### Usage
 
