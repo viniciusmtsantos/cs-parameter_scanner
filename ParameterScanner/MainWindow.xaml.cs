@@ -126,6 +126,9 @@ namespace ParameterScanner
         {
             try
             {
+                // Reflect all changes before search
+                doc.Regenerate();
+
                 // Filter elements in active view
                 var elements = new FilteredElementCollector(doc, doc.ActiveView.Id)
                     .WhereElementIsNotElementType()
@@ -151,6 +154,9 @@ namespace ParameterScanner
         {
             try
             {
+                // Reflect all changes before search
+                doc.Regenerate();
+
                 // Create a parameter value provider for the given parameter ID
                 ParameterValueProvider pvp = new ParameterValueProvider(parameterId);
 
