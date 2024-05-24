@@ -46,6 +46,9 @@ namespace ParameterScanner
             {
                 t.Start();
 
+                // Reflect all changes before search
+                doc.Regenerate();
+
                 parameterId = SearchParameterIdBy(parameter_Name.Text);
 
                 if (parameterId != null)
@@ -85,6 +88,9 @@ namespace ParameterScanner
 
                 t.Start();
 
+                // Reflect all changes before search
+                doc.Regenerate();
+
                 parameterId = SearchParameterIdBy(parameter_Name.Text);
 
                 if (parameterId != null)
@@ -107,7 +113,7 @@ namespace ParameterScanner
                     
                 } else
                 {
-                    TaskDialog.Show("Parameter not found", $"Parameter not found for '{parameter_Name.Text}', with value '{parameter_Value.Text}'");
+                    TaskDialog.Show("Parameter not found", $"Parameter not found for parameter '{parameter_Name.Text}', with value '{parameter_Value.Text}'");
                 }
 
                 t.Commit();
